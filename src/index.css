@@ -1,4 +1,7 @@
-@import url(./Shared/globalStyles.css);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 
 body {
   margin: 0;
@@ -14,4 +17,9 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.square{
+  width: 15px;
+  height: 15px;
 }
