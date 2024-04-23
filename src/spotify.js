@@ -8,7 +8,7 @@ const scopes = ["user-library-read", "playlist-read-private"];
 export const loginEndPoints = `${authEndPoint}client_id=${clientID}&redirect_uri=${redirectURI}&scope=${scopes.join("&20")}&response_type=token&show_dialog=true`;
 
 const apiClient = axios.create({
-   baseURL: "https://api.spotify.com/v1/",
+  baseURL: "https://accounts.spotify.com/author/",
 });
 
 export const setClientToken = (token) => {
@@ -17,5 +17,7 @@ export const setClientToken = (token) => {
       return config;
    });
 };
+
+// export const APIKit = "None";
 
 export default apiClient;
